@@ -1,0 +1,47 @@
+/* Style the outer table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: azure;
+  }
+  
+  /* Style the table headers */
+  th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the table data cells */
+  td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the inner table (for Pack Data) */
+  table table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Style the inner table headers (Ingredient, Inventory Code, Quantity, Unit) */
+  table th {
+    background-color: #f7f7f7;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  /* Style the inner table data cells */
+  table td {
+    padding: 5px;
+  }
+  
+  /* Add some spacing and margin */
+  table table {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  

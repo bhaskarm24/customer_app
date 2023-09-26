@@ -1,0 +1,38 @@
+<div *ngIf="errorMessage">
+  <p>{{ errorMessage }}</p>
+</div>
+
+<table *ngIf="customerData">
+  <thead>
+    <tr>
+      <th>Customer ID</th>
+      <th>Pack Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of customerData">
+      <td>{{ item.customer_id }}</td>
+      <td>
+        <table>
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Inventory Code</th>
+              <th>Quantity</th>
+              <th>Unit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let pack of item.pack_data">
+              <td>{{ pack.ingredient }}</td>
+              <td>{{ pack.inventory_code }}</td>
+              <td>{{ pack.quantity }}</td>
+              <td>{{ pack.unit }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
